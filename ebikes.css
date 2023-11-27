@@ -1,0 +1,297 @@
+header {
+    background-color: #2d8130;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    letter-spacing: -.015em;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+    line-height: 1.8;
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+}
+
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #2d8130;
+}
+
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbranding {
+    font-size: 2rem;
+
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: aliceblue;
+}
+
+.navbar a {
+    text-decoration: none;
+    width: 190px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: #174618;
+}
+
+.title {
+    color: #337735;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.nav-item {
+    margin: 1px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+
+}
+
+.h1 {
+    left: 20px;
+}
+
+.h2 {
+    left: 20px;
+}
+
+.li {
+    right: 20%;
+}
+
+.p {
+    left: 20px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.one {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    left: 60%;
+    right: 0;
+    margin: auto;
+
+    @media only screen and (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.two {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    bottom: -700px;
+    left: 0;
+    right: 50%;
+    margin: auto;
+
+    @media only screen and (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.three {
+    position: absolute;
+    width: 650px;
+    height: 450px;
+    object-fit: contain;
+    position: absolute;
+    top: -500px;
+    bottom: 3400px;
+    left: 60%;
+    right: 0;
+    margin: auto;
+
+    @media only screen and (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.four {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    left: 60%;
+    right: 0;
+    margin: auto;
+
+    @media only screen and (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.image-container.p {
+    right: 20px;
+    left: 20px;
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 6%;
+        gap: 0;
+        flex-direction: column;
+        background-color: #2d8130;
+        width: 94.7%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+}
+
+.health {
+    text-align: left;
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+.city {
+    position: absolute;
+    bottom: -1250px;
+    left: 750px;
+    text-align: right;
+    font-size: 1.5rem;
+    width: 53%;
+}
+
+.jumbotron {
+    left: 400px;
+}
+
+.leaf1 {
+    position: absolute;
+    bottom: -1450px;
+    transform: rotate(-15deg);
+    left: 1200px;
+}
+
+.leaf2 {
+    position: absolute;
+    left: 900px;
+}
+
+.leaf3 {
+    position: absolute;
+    left: 1100px;
+    transform: rotate(35deg);
+    top: 500px;
+}
+
+.contact {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 2250px;
+}
+
+.footer {
+    position: fixed;
+    background-color: #4CAF50;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    flex-shrink: 0;
+    height: 60px;
+
+}
+
+.footer.p {
+    position: fixed;
+    align-items: center;
+    top: 40%;
+}
